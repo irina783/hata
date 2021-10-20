@@ -576,8 +576,7 @@ main{
 .map-column{
     display: inline-block;
     margin: 0 14px;
-    max-width: 466px;
-    width: 100%;
+    width: 47%;
 }
 h4{
     margin-top: 0;
@@ -628,7 +627,7 @@ iframe{
     box-sizing: border-box;
 }
 .half-field{
-    width: 227px;
+    width: 48.71%;
 }
 .padding{
     margin-right: 10px;
@@ -637,10 +636,10 @@ iframe{
     margin-bottom: 10px;
 }
 .textarea{
-    min-width: 250px;
-    max-width: 466px;
+    width: 100%;
     min-height: 105px;
     max-height: 200px;
+    resize: vertical;
 }
 .send-button{
     display: inline-block;
@@ -875,6 +874,70 @@ iframe{
         width: 90%;
     }
 }
+@media screen and (max-width: 905px){
+    .contacts-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .map-column{
+        width: 46%;
+    }
+}    
+@media screen and (max-width: 866px){
+    .map{
+        position: relative;
+        margin-bottom: -32px;
+        min-height: 340px;
+        overflow: hidden;
+    }
+    iframe{
+        position: absolute;
+        border: none;
+        width: 100%;
+        height: 100%;
+        top: -54px;
+    }
+    
+}    
+@media screen and (max-width: 812px){
+    .half-field{
+        width: 48%;
+    }
+}    
+@media screen and (max-width: 768px){
+    .contacts-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .contacts-row{
+        margin: 0 4%;
+    }
+    .contacts-column{
+        justify-content: center;
+        margin: 0 8%;
+    }
+    .cons27{
+        width: 27%;
+    }
+    .office{
+        width: 39%;
+    }
+    .req{
+        width: 39%;
+    }
+    .feed{
+        width: 466px;
+    }
+    .map-cont{
+        width: 100%;
+    }
+    .half-field{
+        width: 48.71%;
+    }
+    
+}
 @media screen and (max-width: 675px){
 /*    .main-menu{
         display: none;
@@ -892,6 +955,16 @@ iframe{
     }
     .social{
         padding: 8px 0;
+    }
+    .header-top{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .header-middle{
+        margin-top: 55px;
     }
     .main-menu .navmenu {
         display: none;
@@ -926,13 +999,73 @@ iframe{
     .menu .column{
         width: 97vw;
     }
-    
-    
-}
-@media screen and (max-width: 641px){
-    .projects_price .house_price{
+    .popular_projects .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .popular_projects .row{
+        margin: 0 8%;
+    }
+    .popular_projects .column{
+        margin: 0 4%;
+    }
+    .popular_projects .house:not(:last-child){
         margin-bottom: 35px;
     }
+
+}
+@media screen and (max-width: 646px){
+    .contacts-row{
+        margin: 0 2%;
+    }
+    .contacts-column{
+        justify-content: center;
+        margin: 0 4%;
+    }
+
+}
+@media screen and (max-width: 641px){
+    .popular_projects .row{
+        margin: 0 6%;
+    }
+    .popular_projects .column{
+        margin: 0 3%;
+    }
+    .popular_projects .house:not(:last-child){
+        margin-bottom: 35px;
+    }
+
+    .projects_price .house_price:not(:last-child){
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 620px){
+    .contacts-row{
+        margin: 0 1%;
+    }
+    .contacts-column{
+        justify-content: center;
+        margin: 0 2%;
+    }
+
+}
+
+@media screen and (max-width: 608px){
+    .contacts-row{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .contacts-column:not(:last-child){
+        margin-bottom: 25px;
+    }
+    .cons27,
+    .office,
+    .req{
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 625px){
@@ -948,7 +1081,23 @@ iframe{
     .footer-line .pbottom{
         margin-bottom: 30px;
     }
+    
+}
+@media screen and (max-width: 585px){
+    .popular_projects .row{
+        margin: 0 4%;
+    }
+    .popular_projects .column{
+        margin: 0 2%;
+    }
 
+    .projects_price .house_price:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .map-row .feed{
+        margin-left: 24px;
+        margin-right: 24px;
+    }
 }
 @media screen and (max-width: 570px){
     .header-middle .row,
@@ -991,14 +1140,23 @@ iframe{
     .footer-line .mb{
         margin-bottom: 30px;
     }
-    .table-price{
+    .tprice{
         overflow-x: scroll;
-        width: 498.36px;
     }
-    .table-price:-webkit-scrollbar{
+    .tprice::-webkit-scrollbar{
         height: 25px;
         background-image: linear-gradient(to top, transparent 45%, grey 45%, grey 55%, transparent 55%);
         border-radius: 50%;
+    }
+
+
+}
+@media screen and (max-width: 490px){
+    .feed{
+        width: 94vw;
+    }
+    .half-field{
+        width: 45vw;
     }
 }
 @media screen and (max-width: 481px){
@@ -1014,9 +1172,66 @@ iframe{
     .popular_projects .row{
         top: 80px;
     }
-    .house{
+    .house:not(:last-child){
         margin-bottom: 35px;
+    }
+    .contacts-row{
+        margin: 0;
+    }
+    .contacts-column{
+        justify-content: center;
+        margin: 0;
+    }
+
+    .cons27,
+    .office,
+    .req{
+        width: 55%;
     }
 }
 
-/*
+@media screen and (max-width: 423px){
+    .cons27,
+    .office,
+    .req{
+        width: 60%;
+    }
+    
+}    
+@media screen and (max-width: 390px){
+    .cons27,
+    .office,
+    .req{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 365px){
+    .cons27,
+    .office,
+    .req{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 332px){
+    .cons27,
+    .office,
+    .req{
+        width: 75%;
+    }
+}
+
+/*    .main-menu{
+    @media screen and (orientation: landscape){
+        .map-cont,
+        .feed{
+            width: 94vw;
+        }
+    
+    }
+@media screen and (max-width: 437px){
+    .agree+label{
+        display: flex;
+        align-self: flex-end;
+    }
+}
+*/

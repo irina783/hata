@@ -13,7 +13,13 @@
         <div class="header-top">
             <div class="wrapper clear">
                 <nav class="main-menu">
-                    <ul>
+                    <input class="checkbox" id="check" type="checkbox" name="menu">
+                    <label for="check">
+                        <div class="burger">
+                            <span></span>
+                        </div>
+                    </label>
+                    <ul class="navmenu">
                         <li>
                             <a href="index.html">Головна</a>
                         </li>
@@ -46,11 +52,11 @@
         </div>
         <div class="header-middle">
             <div class="wrapper">
-                <div class="row">
-                    <div class="column logo">
+                <div class="row flexrow">
+                    <div class="column logo mright pbottom">
                         <a href="index.html"><img src="img/logo.jpg" alt="логотип Хата Плюс"></a>
                     </div>
-                    <div class="column phone-numbers">
+                    <div class="column phone-numbers pbottom">
                         <p>
                             <a class="phone" href="tel:+380971002525">+38(097) 100-25-25</a>
                         </p>
@@ -58,7 +64,7 @@
                             <a href="tel:+380971002525">+38(097) 100-25-25</a>
                         </p>
                     </div>
-                    <div class="column contacts vertical-line">
+                    <div class="column contacts vertical-line mright mb">
                         <p>
                             <a class="mail" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
                         </p>
@@ -71,6 +77,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </header>
     <main class="contacts-info">
@@ -78,21 +85,21 @@
             <h1 class="contacts-heading">Контакти</h1>
             <address>
                 <div class="contacts-row">
-                    <div class="contacts-column">
+                    <div class="contacts-column office">
                         <h4>Наш офіс</h4>
                         <p>с. Війтівці, Хмельницька обл. 27500</p>
                         <p><a class="tel-number" href="tel:+380971002525">+38(097) 100-25-25</a></p>
                         <p><a class="tel-number" href="tel:+380971002525">+38(097) 100-25-25</a></p>
                         <p><a class="email" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
                     </div>
-                    <div class="contacts-column">
+                    <div class="contacts-column cons27">
                         <h4>Консультація</h4>
                         <p>менеджер:</p>
                         <p><a class="tel-number" href="tel:+380971002525">+38(067) 123-10-05</a></p>
                         <p>директор:</p>
                         <p><a class="tel-number" href="tel:+380971002525">+38(068) 950-27-91</a></p>
                     </div>
-                    <div class="contacts-column">
+                    <div class="contacts-column req">
                         <h4>Реквізити</h4>
                         <p>ЄДРПОУ 60045123, ІПН 991097555173<br>
                         Св.№59904423</p>
@@ -103,12 +110,12 @@
             </address>
             <hr class="hr-contacts">
             <div class="map-row">
-                <div class="map-column">
+                <div class="map-column map-cont">
                     <div class="map">
                         <iframe src="https://www.google.com/maps/d/embed?mid=1FYG3fBI-juEMlRn9hlhtDt-DKw1QFrVr"></iframe>
                     </div>
                 </div>
-                <div class="map-column">
+                <div class="map-column feed">
                     <h4>Форма зворотнього зв’язку</h4>
                     <form action="feedback.php" method="POST">
                         <p><label class="feedback-form"><input class="textinput half-field padding" type="text" name="user_name"
@@ -140,8 +147,8 @@
     <footer> 
         <div class="footer-line">
             <div class="wrapper">
-                <div class="row">
-                    <div class="column">
+                <div class="row flexrow">
+                    <div class="column pbottom mright">
                         <ul class="bottom-menu">
                             <li><a href="#">Будинки</a></li>
                             <li><a href="#">Інфраструктура</a></li>
@@ -149,14 +156,14 @@
                             <li><a href="#">Новини</a></li>
                         </ul>
                     </div>
-                    <div class="column">
+                    <div class="column pbottom">
                         <ul class="bottom-menu">
                             <li><a href="#">Про компанію</a></li>
                             <li><a href="#">Страхування</a></li>
                             <li><a href="#">Контакти</a></li>
                         </ul>
                     </div>
-                    <div class="column phone-numbers">
+                    <div class="column phone-numbers translate45 mb">
                         <p>
                             <a class="phone" href="tel:+380971002525">+38(097) 100-25-25</a>
                         </p>
@@ -164,11 +171,11 @@
                             <a href="tel:+380971002525">+38(097) 100-25-25</a>
                         </p>
                     </div>
-                    <div class="column contacts">
+                    <div class="column contacts translate28">
                         <p>
                             <a class="mail" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
                         </p>
-                        <p>
+                        <p class="skype-bottom">
                             <a class="skype" href="skype:hataplus" >hataplus</a>
                         </p>
                     </div>
